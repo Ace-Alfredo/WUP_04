@@ -12,6 +12,8 @@ require(knitr)
 require(tidyverse)
 require(tigerstats)
 
+GSScsv <- read.csv(file="GSScsv.csv")
+
 ```
 
 # Introduction
@@ -51,8 +53,9 @@ basicCN + geom_boxplot()
 ```{r}
 favstats(WORDSUM~DEGREE,data=GSScsv)
 ```
-
-
+  
+  when it comes to the highest for each of the students degree, the max is almost all identical. They all but junior college have a really low score when it comes to the lowest score. When it comes to the average the highest would be graduate students. Then, in order, from higher average score to lower average score would go as following. First junior college, then Bachelor, then high school, and at the end the LT high school.  
+  
 ## Inferential Results
 
 ```{r}
